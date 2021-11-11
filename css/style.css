@@ -46,12 +46,16 @@ h2,h3,h4,h5,h6,a{
 }
 .description{
     position: absolute;
-    top: 30%;
+    top: 12.5%;
     margin: auto;
-    padding: 2em;
 }
-.description h1{
+.description .imglogo	{
+	height: 172px;
+	width: 250px;
+}
+.description h1	{
 	color:#202020 ;
+	padding-top: 1em;
 }
 .description p{
 	color:rgb(88, 88, 88);
@@ -201,3 +205,92 @@ footer a {
 	color: black;
 	text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+	.header{
+		position: relative;
+		background-image: url('images/background.png');
+		background-size: cover;
+		background-position: center;
+	}
+	.overlay{
+		position: absolute;
+		min-height: 100%;
+		min-width: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(244, 244, 244, 0.79);
+	}
+	.description{
+		position: absolute;
+		top: 12.5%;
+		margin: auto;
+	}
+	.description .imglogo	{
+		height: 172px;
+		width: 250px;
+	}
+	.description h1	{
+		color:#202020 ;
+		padding-top: 1em;
+	}
+	.description p{
+		color:rgb(88, 88, 88);
+		font-size: 20px;
+		width: 100%;
+		line-height: 1.5;
+	}
+	.description button{
+		border:1px  solid #202020;
+		background: #191919;;
+		color:#fff;
+	}
+	.about{
+		margin: 2em 0;
+		padding: 1em;
+		position: relative;
+	}
+	.about h1{
+		color:#202020;
+		margin: 1em;
+		font-weight: bold;
+	}
+	.about img{
+		height: 280px;
+		width: 280px;
+		
+	}
+	.team{
+		margin: 4em 0;
+		position: relative;
+	
+	}
+	.team h1{
+		color:#202020;
+		margin: 2em;
+		font-weight: bold;	
+	}
+	.team .item{
+		position: relative;
+		overflow: hidden;	
+	}
+	.team .des{
+		background: #757575;
+		color: #fff;
+		text-align: center;
+		border-top-right-radius: 93%;
+		transition:.3s ease-in-out;
+		position: absolute;
+		width: 88%;
+		bottom: 24px;
+	}
+	.team .item:hover .des{
+		height: 100%;
+		background:#202020;
+		position: absolute;
+		width: 89%;
+		padding: 5em;
+		top: 0;
+		border-top-right-radius: 0;
+	}
+  }
